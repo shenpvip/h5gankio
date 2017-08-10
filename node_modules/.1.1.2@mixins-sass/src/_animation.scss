@@ -1,7 +1,0 @@
-@mixin animation($params) {
-    $name: first($params);
-    animation: $params;
-    @keyframes #{$name} {
-        @content
-    }
-}
