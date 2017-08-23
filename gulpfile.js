@@ -17,7 +17,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const ifElse = require('gulp-if-else');
 const base64 = require('gulp-base64');
 const replace = require('gulp-replace');
-const CDN = 'http://h5.gankio.cn';
+const CDN = '';
 var webpackConfig = require('./webpack.config.js');  //引入webpack配置
 var BUILD = "DEV";
 //开发环境定义路径
