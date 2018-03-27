@@ -1,79 +1,6 @@
 @charset "utf-8";
 
 @import "../../node_modules/mixins-sass/src/mixins";
-/**
- * [flexbox description] css3伸缩盒
- * @return {[type]} [description]
- */
-@mixin flexbox(){
-    display: box;              
-    display: -webkit-box;      
-    display: -moz-box;     
-    display: -ms-flexbox;      
-    display: -moz-flex;    
-    display: -webkit-flex;     
-    display: flex;             
-}
-
-/**
- * [hc description] 水平居中
- * @return {[type]} [description]
- */
-@mixin flex-hc(){
-    /* 09版 */
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    /* 12版 */
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-}
-
-/**
- * [vc description] 垂直居中
- * @return {[type]} [description]
- */
-@mixin flex-vc(){
-    /* 09版 */
-    -webkit-box-align: center;
-    /* 12版 */
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-}
-/**
- * [between description] 两端对齐
- * @return {[type]} [description]
- */
-@mixin flex-between(){
-    -webkit-box-pack:justify;
-    -webkit-justify-content:space-between;
-    -moz-box-pack:justify;
-    -moz-justify-content:space-between;
-    -o-box-pack:justify;
-    -o-justify-content:space-between;
-    -ms-flex-pack:justify;
-    justify-content:space-between;
-}
-
-/**
- * [between description] 两端对齐
- * @return {[type]} [description]
- */
-@mixin flex-around(){
-    -webkit-box-pack:justify;
-    -webkit-justify-content:space-around;
-    -moz-box-pack:justify;
-    -moz-justify-content:space-around;
-    -o-box-pack:justify;
-    -o-justify-content:space-around;
-    -ms-flex-pack:justify;
-    justify-content:space-around;
-}
 
 .nav_wrap{
 	position: fixed;
@@ -137,8 +64,8 @@
 		@include rem(height,300px);
 		@include rem(margin-bottom,20px);
 		overflow: hidden;
-		@include flexbox();
-		@include flex-vc();
+		display: flex;
+		align-items: center;
 		.info_img{
 			width: 100%;
 		}
@@ -194,8 +121,8 @@
 				@include rem(margin-top,20px);
 				@include rem(margin-bottom,20px);
 				overflow: hidden;
-				@include flexbox();
-				@include flex-vc();
+				display: flex;
+				align-items: center;
 				img{
 					width: 100%;
 				}
