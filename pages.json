@@ -1,0 +1,62 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "干货集中营",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "干货集中营",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/picture/picture",
+			"style": {
+				"navigationBarTitleText": "妹纸",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "干货集中营",
+		"navigationBarBackgroundColor": "#EC6149",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#ABAFB3",
+		"selectedColor": "#EC6149",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbarIcon/home.png",
+				"selectedIconPath": "static/tabbarIcon/home_selected.png",
+				"text": "干货"
+			}, {
+				"pagePath": "pages/article/article",
+				"iconPath": "static/tabbarIcon/article.png",
+				"selectedIconPath": "static/tabbarIcon/article_selected.png",
+				"text": "文章"
+			},
+			{
+				"pagePath": "pages/picture/picture",
+				"iconPath": "static/tabbarIcon/pic.png",
+				"selectedIconPath": "static/tabbarIcon/pic_selected.png",
+				"text": "妹纸"
+			}
+		]
+	}
+}
